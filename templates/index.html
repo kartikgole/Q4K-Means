@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karteek</title>
+
+</head>
+<body>
+<h1>Karteek</h1>
+<h2>1001553522</h2>
+<img src = "https://kartiksstorage.blob.core.windows.net/assignment1final/Rick_Sanchez.png" height="200" width="200">
+
+
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label>Enter Column 1 for Clustering</label>
+    <input type="text" name="col1" />
+    <label>Enter Column 2 for Clustering</label>
+    <input type="text" name="col2" /><br>
+    <label>Enter no of clusters</label>
+    <input type="text" name="noclu" /><br>
+    <input type="submit" />
+</form>
+<h2>Centroids = {{ cent }}</h2>
+<h2>Centroid locations and points = {{ lab }}</h2>
+<h2>Centroid distances = {{ cdist }}</h2>
+
+<form action="/farerange" method="post" enctype="multipart/form-data">
+    <label>Fare Range 1</label>
+    <input type="text" name="fare1" />
+    <label>Fare Range 2</label>
+    <input type="text" name="fare2" /><br>
+    <label>Enter no of clusters</label>
+    <input type="submit" />
+</form>
+<h2>No of fares between this range = {{ ffares }}</h2>
+
+
+
+
+</body>
+</html>

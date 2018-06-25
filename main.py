@@ -9,7 +9,7 @@ import io
 
 app = Flask(__name__)
 
-cnxn = ibm_db_dbi.connect("DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=fdr16575;PWD=8-n367wvhl6f8n41;", "", "")
+cnxn = ibm_db_dbi.connect("####", "", "")
 if cnxn:
     print('database connected')
 
